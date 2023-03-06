@@ -1,0 +1,130 @@
+body {
+    background-color: #141414;
+    font-family: Arial, sans-serif;
+  }
+  
+  .App {
+    flex-direction: column;
+    display: flex;
+  }
+  
+  .navbar {
+   
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #141414;
+        color: white;
+        height: 70px;
+        padding: 0 30px;
+        position: fixed;
+        width: 96vw;
+        z-index:1;
+      }
+      
+ 
+  
+  .navbar-logo {
+    height: 25px;
+    object-fit: contain;
+  }
+  
+  .navbar-links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-link {
+    margin-right: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #555;
+    transition: 100ms;
+  }
+  
+  .navbar-link:hover {
+    font-size: large;
+    color: rgb(255, 255, 255);
+  }
+  
+  .navbar-link:last-child {
+    margin-right: 0;
+  }
+  
+  .text-input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #555;
+    padding: 10px;
+    margin-right: 10px;
+    width: 200px;
+  }
+  
+  .text-input::placeholder {
+    color: #999;
+  }
+  
+  .button-in {
+    background-color: transparent;
+    border: none;
+    color: #555;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button-in:hover {
+    color: white;
+  }
+  
+  .add-button {
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .add-button:hover {
+    background-color: #c40000;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none;
+    }
+  
+    .text-input {
+      margin-right: 0;
+      width: 100%;
+    }
+  
+  }
+  .image-container{
+    color: #c40000;
+    background-color: #141414;
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+margin: 10px;
+  }
+.imglist{
+  display: flex;
+  width: 250px;
+  height:200px ;
+  border-radius: 10px;
+  object-fit: cover;
+  margin: 10px;
+  flex-wrap: nowrap;
+  
+}
